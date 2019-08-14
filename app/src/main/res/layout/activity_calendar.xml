@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CalendarActivity">
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/selectDate"
+            android:text=""
+            android:textSize="20sp"
+            android:layout_marginLeft="25dp"
+    />
+
+    <ImageButton
+            android:id="@+id/selectDate"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_event_black_24dp"
+            android:background="#00000000"
+            android:scaleType="centerCrop"
+            android:layout_margin="10dp"
+    />
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:visibility="gone"
+            android:id="@+id/calendarDailyWorkouts"
+    >
+
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="541dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="71dp"
+                android:id="@+id/workoutsPerDay"
+                tools:visibility="visible"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/calendarWorkoutManagement"
+            android:layout_alignParentBottom="true" android:visibility="gone">
+
+        <Button
+                android:text="Add workout"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/btnAddWorkout"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+

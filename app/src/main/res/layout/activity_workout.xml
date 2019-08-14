@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CalendarActivity">
+
+    <TextView
+            android:id="@+id/selectedWorkoutName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/selectedWorkoutTitle"
+            android:text=""
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+    />
+
+    <TextView
+            android:id="@+id/selectedWorkoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout:"
+            android:textSize="20sp"
+            android:layout_marginLeft="25dp"
+    />
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:visibility="visible"
+            android:id="@+id/workoutExercises"
+    >
+
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="541dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="71dp"
+                android:id="@+id/exercisesPerWorkout"
+                tools:visibility="visible"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/workoutExerciseManagement"
+            android:layout_alignParentBottom="true" android:visibility="visible">
+
+        <Button
+                android:text="Add exercise"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/btnAddExercise"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

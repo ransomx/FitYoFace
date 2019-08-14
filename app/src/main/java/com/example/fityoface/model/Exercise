@@ -1,0 +1,76 @@
+package com.example.fityoface.model;
+
+import com.example.fityoface.enums.*;
+
+public class Exercise{
+
+    protected String name;
+    protected String info;
+
+    protected Category category;
+    protected MuscleGroup muscleGroup;
+    protected ActivityType activity;
+
+    protected int complexity;
+
+
+    public Exercise(String name, String info, Category category, MuscleGroup muscleGroup, ActivityType activity, int complexity) {
+        this.name = name;
+        this.info = info;
+        this.category = category;
+        this.muscleGroup = muscleGroup;
+        this.activity = activity;
+        this.complexity = complexity;
+    }
+
+    public Exercise() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    public MuscleGroup getMuscleGroup() {
+        return muscleGroup;
+    }
+
+    public void setMuscleGroup(MuscleGroup muscleGroup) {
+        this.muscleGroup = muscleGroup;
+    }
+
+    public ActivityType getActivity() {
+        return activity;
+    }
+
+    public void setActivity(ActivityType activity) {
+        this.activity = activity;
+    }
+
+    public int getComplexity() {
+        return complexity;
+    }
+
+    public void setComplexity(int complexity) {
+        this.complexity = complexity;
+    }
+}
